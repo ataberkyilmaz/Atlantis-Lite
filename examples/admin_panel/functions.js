@@ -703,7 +703,7 @@ async function removeAdmin(toRemove) {
 
 async function addHotspot(toAdd, name) {
     const address = await getCurrentAccount();
-    await window.contract.methods.addHotspot(address, toAdd, name).send({from:address});
+    await window.contract.methods.addHotspot(address, toAdd, "aaabbbccc").send({from:address});
 }
 
 async function removeHotspot(toRemove) {
